@@ -1,0 +1,38 @@
+{
+  "name": "mustard-ui",
+  "version": "1.0.4",
+  "description": "A starter CSS framework that actually looks good.",
+  "main": "dist/css/mustard-ui.min.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylelogue/mustard-ui.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "starter",
+    "responsive",
+    "flexbox"
+  ],
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp sass"
+  },
+  "author": "Kyle Logue <hello@kylelogue.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "natives": "^1.1.6",
+    "node-sass": "^9.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
