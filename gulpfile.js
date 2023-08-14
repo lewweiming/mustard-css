@@ -83,7 +83,9 @@ gulp.task('sass', async function () {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/css/'))
-        .pipe(browserSync.stream());
-});
+        .pipe(browserSync.stream())
+    });
+
+    
 
 gulp.task('default', gulp.series('serve', 'sass'));

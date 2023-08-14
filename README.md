@@ -23,6 +23,31 @@ gulp
 npm run build
 ```
 
+## Responsive Mobile Menu
+
+> Remember to load the mobile-menu.js script and Jquery as well
+
+```
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#">Logo</a>
+        </div>
+        <ul class="nav-links">
+            <li><a class="active" href="/docs/installation">Docs</a></li>
+            <li><a href="https://github.com/kylelogue/mustard-ui" target="_blank">GitHub</a></li>
+            <li><a href="/support">Support</a></li>
+        </ul>
+        <a class="mobile-menu-toggle"></a>
+        <ul class="mobile-menu menu" style="display: none;">
+            <li><a href="../installation/index.html">Docs</a></li>
+            <li><a href="https://github.com/kylelogue/mustard-ui" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
+</nav>
+```
+
 ## Development Notes
 
 After exploring for a while, we discovered the best way to replace scss variables while compiling the dist is to use https://github.com/giowe/gulp-sass-vars
@@ -34,3 +59,4 @@ We tried gulp-sass-variables but it did not work properly.
 ### User Prompts
 
 We've decided to go with "enquirer" instead of "inquirer" for ease of implementation.
+
