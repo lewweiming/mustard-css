@@ -22,22 +22,32 @@ gulp.task('sass', async function () {
     var themeSettings = {
         'body-bg-color': '#ffffff', // Replace with your desired value
         'brand-color': '#000000', // Replace with another value
+        'nav-link-color': 'white',
         // Add more variables and values as needed
     };
 
     const prompt = new Select({
         name: 'color',
         message: 'Pick a color for the Mustard UI theme',
-        choices: ['black', 'yellow', 'blue', 'red'].map(n => ({
+        choices: ['white', 'black', 'yellow', 'blue', 'red'].map(n => ({
             name: n,
             message: colors[n](n)
         }))
     });
 
+
+    let response = await prompt.run();
+
     console.log(response)
 
     // Change themeSettings based on user response
     switch (response) {
+        case 'white':
+            themeSettings['body-bg-color'] = '#ffffff';
+            themeSettings['brand-color'] = '#ffffff';
+            themeSettings['nav-link-color'] = 'black';
+            console.log("You've selected white!")
+            break;
         case 'black':
             themeSettings['body-bg-color'] = '#ffffff';
             themeSettings['brand-color'] = '#000000';
@@ -61,8 +71,6 @@ gulp.task('sass', async function () {
         default:
         // Do nothing
     }
-
-    console.log(response)
 
     return gulp.src('src/scss/mustard-ui.scss')
         .pipe(sourcemaps.init())
