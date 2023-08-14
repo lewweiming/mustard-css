@@ -11,6 +11,10 @@ $mobile-min-width: $bp-medium !default;
     z-index: 10;
 }
 
+.mobile-menu.menu li a {
+    color: black;
+}
+
 /* HIDE MENU ON LARGE WIDTH - MEDIUM BREAKPOINT */
 @media (min-width: $mobile-min-width) {
     .mobile-menu {
