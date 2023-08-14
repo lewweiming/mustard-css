@@ -20,3 +20,15 @@ gulp
 ```
 npm run build
 ```
+
+## Development Notes
+
+After exploring for a while, we discovered the best way to replace scss variables while compiling the dist is to use https://github.com/giowe/gulp-sass-vars
+
+We tried gulp-replace but proved too tricky to form the regex to do so.
+
+We tried gulp-sass-variables but it did not work properly.
+
+### User Prompts
+
+We've decided to go with "enquirer" instead of "inquirer" for ease of implementation.
