@@ -8,7 +8,9 @@
 
 ## Serving with gulp
 
-> This will serve the website locally
+> This will serve the website locally.
+
+- Note that this will use the default theme variables
 
 ```
 npm install

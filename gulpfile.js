@@ -6,6 +6,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const sassVars = require('gulp-sass-vars');
 const { Select } = require('enquirer');
+const colors = require('ansi-colors');
 
 gulp.task('serve', function () {
     browserSync.init({
@@ -24,14 +25,16 @@ gulp.task('sass', async function () {
         // Add more variables and values as needed
     };
 
-
     const prompt = new Select({
         name: 'color',
         message: 'Pick a color for the Mustard UI theme',
-        choices: ['black', 'yellow', 'blue', 'red']
+        choices: ['black', 'yellow', 'blue', 'red'].map(n => ({
+            name: n,
+            message: colors[n](n)
+        }))
     });
 
-    const response = await prompt.run()
+    console.log(response)
 
     // Change themeSettings based on user response
     switch (response) {

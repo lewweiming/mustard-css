@@ -23,6 +23,7 @@
   "author": "Kyle Logue <hello@kylelogue.com>",
   "license": "MIT",
   "dependencies": {
+    "ansi-colors": "^4.1.3",
     "browser-sync": "^2.29.3",
     "enquirer": "^2.4.1",
     "gulp": "^4.0.2",
