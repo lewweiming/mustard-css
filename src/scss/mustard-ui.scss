@@ -17,6 +17,9 @@ https://mustard-ui.com
 // Base
 @import 'base/base';
 
+// Responsive
+@import 'responsive/responsive';
+
 // Utility
 @import 'utility/alignment';
 @import 'utility/containers';
@@ -52,6 +55,3 @@ https://mustard-ui.com
 @import 'components/tabs';
 @import 'components/tags';
 @import 'components/tooltips';
-
-// Responsive
-@import 'responsive/responsive';

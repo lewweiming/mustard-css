@@ -48,6 +48,33 @@ npm run build
 </nav>
 ```
 
+## Cards now support images
+
+```
+<div class="card">
+    <div class="card-image">
+    <img src="..." />
+    </div>
+    <div class="card-content">
+    <div class="card-title">
+    </div>
+    </div>
+</div>
+```
+
+## Grids now supported
+
+See https://css-tricks.com/almanac/properties/g/gap/
+
+- Grids are responsive
+
+```
+<div class="grid grid-3">
+    // Equal height cards
+    <div class="card" style="height: 100%;">...</div>
+</div>
+```
+
 ## Development Notes
 
 After exploring for a while, we discovered the best way to replace scss variables while compiling the dist is to use https://github.com/giowe/gulp-sass-vars

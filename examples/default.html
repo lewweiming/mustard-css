@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- MUSTARD CSS -->
+    <link rel="stylesheet" href="/dist/css/mustard-ui.min.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+
+    <!-- TIPPY -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a class="active" href="/docs/installation">Docs</a></li>
+                <li><a href="https://github.com/kylelogue/mustard-ui" target="_blank">GitHub</a></li>
+                <li><a href="/support">Support</a></li>
+            </ul>
+            <a class="mobile-menu-toggle"></a>
+            <ul class="mobile-menu menu" style="display: none;">
+                <li><a href="../installation/index.html">Docs</a></li>
+                <li><a href="https://github.com/kylelogue/mustard-ui" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <!-- COL -->
+            <div class="col col-lg-3">
+                <div class="sidebar sidebar-left">
+                    <h3 class="sidebar-category">Resources</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="#" data-tippy-content="Tooltip">Tooltip</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col col-lg-9">
+                <section>
+                    <h1>Hello and welcome</h1>
+                </section>
+                
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="row" style="border-top: 1px solid #e0e0e0;">
+            <div>Built with Mustard.css</div>
+        </div>
+    </div>
+
+    <!-- ADDITIONAL SCRIPTS -->
+    <!-- MOBILE MENU -->
+    <script src="/dist/js/mobile-menu.js"></script>
+    <!-- TIPPY -->
+    <script>
+        window.onload = function() {
+        tippy('[data-tippy-content]')
+    }
+    </script>
+    
+</body>
+
+</html>

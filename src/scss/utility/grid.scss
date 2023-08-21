@@ -5,6 +5,35 @@ $col-count: 12 !default;
 $col-spacing: 10px !default;
 $row-spacing: 10px !default;
 
+$grid-gap: 30px !default;
+
+.grid {
+    display: grid;
+    gap: $grid-gap;
+}
+
+.grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: $mobile-min-width) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .row {
     display: flex;
     flex-direction: row;

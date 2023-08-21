@@ -2,12 +2,12 @@
 // ==============================
 
 $card-shadow: true !default;
+$card-image-height: 100px !default;
 $card-title-font-size: 24px !default;
 $card-bg-color: $color-white !default;
 
 .card {
     margin: 15px;
-    padding: 30px;
     background: $card-bg-color;
     overflow: hidden;
     border-radius: 5px;
@@ -15,7 +15,16 @@ $card-bg-color: $color-white !default;
     @if $card-shadow {
         box-shadow: 0 4px 12px rgba($color-gray-300, 0.5);
     }
+}
 
+.card-image img {
+    width: 100%;
+    height: $card-image-height;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
 }
 
 .card-title {
