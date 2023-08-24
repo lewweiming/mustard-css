@@ -35,7 +35,11 @@ nav,
     align-items: center;
     font-size: 32px;
     line-height: 32px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
+
+.nav-logo:hover { transform: scale(0.9); }
 
 .nav-links {
     display: none;
